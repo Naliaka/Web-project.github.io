@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web Development-M00385984 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="_css/main.css" rel="stylesheet" media="screen, projection">
+<script type ="text/javascript">
+        var i=0;
+        var timeout;
+        function preLoadImages()
+        {
+            if (document.images)
+            {
+                fire = new Array();
+                fire[0] = new Image();
+                fire[0].src = "01.jpg" 
+                fire[1] = new Image();
+                fire[1].src = "02.jpg" 
+                fire[2] = new Image();
+                fire[2].src = "03.jpg" 
+                fire[3] = new Image();
+                fire[3].src = "04.jpg" 
+                fire[4] = new Image();
+                fire[4].src = "05.jpg" 
+                fire[5] = new Image();
+                fire[5].src = "06.jpg" 
+                
+            }
+            else
+            {
+                alert("There are no images to preload");
+            }
+        }
+        function startSlideShow()
+        {
+            if (i < fire.length)
+            {
+                document.images["fire_pic"].src = fire[i].src;
+                i++;
+            }
+            else
+            {
+                i = 0;
+                document.images["fire_pic"].src = fire[i].src;
+            }
+            timeout = setTimeout(startSlideShow, 1000);
+        }
+        function stopSlideShow()
+        {
+            if (i < fire.length)
+            {
+                document.images["fire_pic"].src = fire[i].src;
+                i++;
+            }
+            else
+            {
+                i = 0;
+                document.images["fire_pic"].src = fire[i].src;
+            }
+            timeout = setTimeout(startSlideShow, 1000);
+        }
+        function stopSlideShow()
+        {
+            clearTimeout(timeout);
+        }
+
+$(function(){
+    $('.slideshow img:gt(0)').hide();
+    setInterval(function(){$('.slideshow :first-child').fadeOut(2000).next('img').fadeIn(2000).end().appendTo('.slideshow');}, 4000);
+});
+
+    </script>
+</head>
+<body>
+<header id="pageHeader">
+  <hgroup>
+    <h1>BlackBerry</h1>
+    <h2>World's Best smart Phone</h2>
+  </hgroup>
+</header>
+<nav id="mainNav">
+  <h2>Site navigation</h2>
+  <ul>
+    <li><a href="home.htm" title="Favorite" class="home">Home <em> our history, latest news </em></a></li>
+    <li><a href="galleries.htm" title="Our photo galleries" class="gallery current">Galleries <em>explore our photos</em></a> </li>
+    <li><a href="contact.htm" title="Get in touch" class="interact">Interact <em>contact, follow, or submit your ideas</em></a></li>
+    <li><a href="shop.htm" title="Buy our stuff" class="shop">Shop <em>buy our Phone!</em></a></li>
+  </ul>
+</nav>
+<section id="content" >
+  <article id="contact" class="cf">
+    <h1>Explore our photos</h1>
+    
+    <body onload = "preLoadImages()">
+    <img name="fire_pic" src="01.jpg"/>
+    <form>
+     <p>
+        <input type=button value="Start Show" onClick="return startSlideShow();"/>
+        <input type=button value="Stop Show" onClick="return stopSlideShow();"/>
+    </p>
+    </form> <br>
+    <img name="MyImage" src="_images/1.jpg"
+    onmouseover="this.src = '_images/2.jpg';"
+    onmouseout="this.src = '_images/1.jpg';">
+    </section>
+  </article>
+  <aside>
+    <nav id="archives">
+      <h2>Archived</h2>
+      <ul>
+        <li><a href="Smartphone.htm" title="Smartphone">Smartphone</a></li>
+        <li><a href="Business.htm" title="Business">Business</a></li>
+        <li><a href="Resourse.htm" title="Resourse">Resourse</a></li>
+        <li><a href="Applications.htm" title="Applications">Applications</a></li>
+        <li><a href="BBM.htm" title="BBM">BBM</a></li>
+      </ul>
+      <select>
+        <option value="Smartphone.htm" selected>Smartphone</option>
+        <option value="Business.htm">Business</option>
+        <option value="Resourse.htm">Resourse</option>
+        <option value="Applications.htm">Applications</option>
+        <option value="BBM.htm">BBM</option>
+      </select>
+    </nav>
+    <section class="contest">
+      <h2>This month's contest</h2>
+      <img src="_images/contest.jpg" width="200" height="200" alt="This month's contest">
+      <p>Do you know the type and applications for this phone? this is? Send your guess to us via the contact page. The randomly selected winner will win a framed print of their choice from our shop. Cool! <span class="enter"><a href="#" title="enter our contest">Enter</a></span></p>
+    </section>
+    <section class="contest">
+      <h2>Previous contest</h2>
+      <img src="_images/previous.jpg" width="200" height="200" alt="This month's contest">
+      <p>Blackberry Curve 8520 white</p>
+    </section>
+  </aside>
+</section>
+<footer id="pageFooter">
+  <form action="http://desolve.org" method="post" class="search-form">
+    <label for="search">Looking for something?</label>
+    <input type="search" placeholder="Search" title="Search" class="q" name="search" id="search">
+    <input type="submit" class="submit" value="Go" name="submit">
+  </form>
+  <p><a href="http://www.twitter.com/miss_wafula">twitter</a></p>
+  <p class="notice">&copy; Blackberry Coursework </p>
+</footer>
+</body>
+</html>

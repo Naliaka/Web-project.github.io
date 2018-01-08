@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web Development-M00385984 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="_css/main.css" rel="stylesheet" media="screen, projection">
+</head>
+<body>
+<header id="pageHeader">
+  <hgroup>
+    <h1>BlackBerry</h1>
+    <h2>World's Best smart Phone</h2>
+  </hgroup>
+</header>
+<nav id="mainNav">
+  <h2>Site navigation</h2>
+  <ul>
+    <li><a href="home.htm" title="Favorite" class="home">Home <em> our history,latest news </em></a></li>
+    <li><a href="galleries.htm" title="Our photo galleries" class="gallery current">Galleries <em>explore our photos</em></a> </li>
+    <li><a href="contact.htm" title="Get in touch" class="interact">Interact <em>contact, follow, or submit your ideas</em></a></li>
+    <li><a href="shop.htm" title="Buy our stuff" class="shop">Shop <em>buy our Phone!</em></a></li>
+  </ul>
+</nav>
+<section id="content" >
+  <article id="contact" class="cf">
+    <h1>Interact with us </h1>
+    <section class="social">
+    <h2>Feel free to Interact with us,</h2>
+    <p><a href="tel:+230 5789 786" title="ring ring ring" class="phone">+230 5789 786  Or drop us a line..</a></p>
+    </section>
+    <section class="contact">
+    <form id="frmContact" action="http://www.milkawafula.com" method="post">
+    <fieldset title="About you">
+    <legend><span>About you</span></legend>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" tabindex="10" placeholder="Your name" required>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" tabindex="20" placeholder="valid email" required>
+      <label for="website">Personal website</label>
+      <input type="url" name="website" id="website" tabindex="30" placeholder="website" required>
+    </fieldset>
+    <fieldset title="Your turn">
+    <legend><span>Your turn</span></legend>
+     <p>What, exactly then, are you after?</p>
+       <input type="radio" name="intent" value="suggest" id="suggest" tabindex="40">
+       <label for="suggest" class="inline">Smartphone</label><br>
+         <input type="radio" name="intent" value="submit" id="submit" tabindex="50">
+       <label for="submit" class="inline">BBM</label><br>
+          <input type="radio" name="intent" value="comment" id="comment" tabindex="60">
+       <label for="comment" class="inline">Comment on a gallery</label><br>
+        <input type="radio" name="intent" value="friends" id="friends" tabindex="70">
+       <label for="friends" class="inline"> Make friends</label><br>
+         <label for="discourse">Pour out your heart</label>
+         <textarea id="discourse" name="discourse" tabindex="80" rows="7" placeholder="This is where your thoughts go">
+         </textarea>
+         <input type="submit" name="submit" id="submit" value="Oh really?" tabindex="90">
+    </fieldset>
+    <fieldset id="generalInfo">
+          
+            <p>Check here to receive brochures on our services: <input type="checkbox" name="brochures" id="brochures" tabindex="165" /></p>
+            <div id="tourSelection">
+            <div class="col1">
+              <p>
+<input type="checkbox" name="Training" id="Training" tabindex="170" />
+              <label for="Training">Training</label>
+</p>
+              <p>
+<input type="checkbox" name="Online Demo" id="Online Demo" tabindex="180"  />
+              <label for="Online Demo">Online Demo</label>
+</p>
+              <p>
+<input type="checkbox" name="Applications" id="Applications" tabindex="190" />
+              <label for="Applications">Applications</label>
+</p>
+    </div>
+            <div class="col2"></div>
+         </div>
+            <p class="clearBoth"><br />
+          </p>
+            <p>
+              <input type="submit"  name="submit2" id="submitBtn" value="Send" tabindex="300" />
+            </p>
+          </fieldset>
+    </form>
+    <h2>Maybe you're the more social type...</h2> <br>
+    <p>
+    <ul class="connect">
+    <li><a href="http://www.facebook.com" title="Be our friend...PLEASE" class="facebook">Facebook</a></li>
+    <li><a href="http://linkedin.com" title="Please join our professional network on LinkedIn" class="linked">LinkedIn</a></li>
+    <li><a href="https://plus.google.com" title="help us figure out Google+" class="google">Google+</a></li>
+    <li><a href="http://www.youtube.com" class="youtube">YouTube</a></li>
+    </ul>
+    </p/>
+    </section>
+  </article>
+  <aside>
+    <nav id="archives">
+      <h2>Archived</h2>
+      <ul>
+        <li><a href="Smartphone.htm" title="Smartphone">Smartphone</a></li>
+        <li><a href="Business.htm" title="Business">Business</a></li>
+        <li><a href="Resourse.htm" title="Resourse">Resourse</a></li>
+        <li><a href="Applications.htm" title="Applications">Applications</a></li>
+        <li><a href="BBM.htm" title="BBM">BBM</a></li>
+      </ul>
+      <select>
+        <option value="Smartphone.htm" selected>Smartphone</option>
+        <option value="Business.htm">Business</option>
+        <option value="Resourse.htm">Resourse</option>
+        <option value="Applications.htm">Applications</option>
+        <option value="BBM.htm">BBM</option>
+      </select>
+    </nav>
+    <section class="contest">
+      <h2>This month's contest</h2>
+      <img src="_images/contest.jpg" width="200" height="200" alt="This month's contest">
+      <p>Do you know the type and applications for this phone? this is? Send your guess to us via the contact page. The randomly selected winner will win a framed print of their choice from our shop. Cool! <span class="enter"><a href="#" title="enter our contest">Enter</a></span></p>
+    </section>
+    <section class="contest">
+      <h2>Previous contest</h2>
+      <img src="_images/previous.jpg" width="200" height="200" alt="This month's contest">
+      <p>Blackberry Curve 8520 white</p>
+    </section>
+  </aside>
+</section>
+<footer id="pageFooter">
+  <form action="http://desolve.org" method="post" class="search-form">
+    <label for="search">Looking for something?</label>
+    <input type="search" placeholder="Search" title="Search" class="q" name="search" id="search">
+    <input type="submit" class="submit" value="Go" name="submit">
+  </form>
+  <p><a href="http://www.twitter.com/miss_wafula">twitter</a></p>
+  <p class="notice">&copy; Blackberry Coursework </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

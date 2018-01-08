@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Web Development-M00385984 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="_css/main.css" rel="stylesheet" media="screen, projection">
+</head>
+</head>
+<body>
+<header id="pageHeader">
+  <hgroup>
+    <h1>BlackBerry</h1>
+    <h2>World's Best smart Phone</h2>
+  </hgroup>
+</header>
+<nav id="mainNav">
+  <h2>Site navigation</h2>
+  <ul>
+    <li><a href="home.htm" title="Favorite" class="home">Home <em> our history,latest news </em></a></li>
+    <li><a href="galleries.htm" title="Our photo galleries" class="gallery current">Galleries <em>explore our photos</em></a> </li>
+    <li><a href="contact.htm" title="Get in touch" class="interact">Interact <em>contact, follow, or submit your own</em></a></li>
+    <li><a href="shop.htm" title="Buy our stuff" class="shop">Shop <em>buy our stuff!</em></a></li>
+  </ul>
+</nav>
+<section id="content">
+  <article id="gallery">
+    <h1 class="galleryTitle"> who we are </h1>
+    <div class="intro">
+      <p>In August we traveled to Philadelphia for a weeks worth of shooting. Although we didn’t find much brotherly love, we did find a lot to love about Ben Franklin’s old home, From the amazing 30th Street Station to a turn of the century brothel, we cover it all.</p><p class="more"></p>
+      <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules.</p>
+      <p>Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.</p>
+      <p>Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental in fact, it va esser Occidental.</p>
+      <p>A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. </p>
+    </div>
+    <div class="photos">
+      <img src="_images/2.jpg" alt="">
+      <img src="_images/3.jpg" alt=""> 
+      <img name="MyImage" src="_images/contest.jpg"
+        onmouseover="this.src = '_images/previous.jpg';"
+        onmouseout="this.src = '_images/contest.jpg';">
+      <img src="_images/3.jpg" alt="">        
+    </div>
+  </article>
+  <aside>
+    <nav id="archives">
+      <h2>Archived</h2>
+      <ul>
+        <li><a href="Smartphone.htm" title="Smartphone">Smartphone</a></li>
+        <li><a href="Business.htm" title="Business">Business</a></li>
+        <li><a href="Resourse.htm" title="Resourse">Resourse</a></li>
+        <li><a href="Applications.htm" title="Applications">Applications</a></li>
+        <li><a href="BBM.htm" title="BBM">BBM</a></li>
+      </ul>
+      <select>
+        <option value="Smartphone.htm" selected>Smartphone</option>
+        <option value="Business.htm">Business</option>
+        <option value="Resourse.htm">Resourse</option>
+        <option value="Applications.htm">Applications</option>
+        <option value="BBM.htm">BBM</option>
+      </select>
+    </nav>
+    <section class="contest">
+      <h2>This month's contest</h2>
+      <img src="_images/contest.jpg" width="200" height="200" alt="This month's contest">
+      <p>Do you know the type and applications for this phone? this is? Send your guess to us via the contact page. The randomly selected winner will win a framed print of their choice from our shop. Cool! <span class="enter"><a href="#" title="enter our contest">Enter</a></span></p>
+    </section>
+    <section class="contest">
+      <h2>Previous contest</h2>
+      <img src="_images/previous.jpg" width="200" height="200" alt="This month's contest">
+      <p>Blackberry Curve 8520 black</p>
+      <div id="trivia" class="callOut">
+        <h2>Did You Know?</h2>
+        <p>Blackberry produces makes 17 million applications each year!</p>
+      </div> 
+
+      <div id="join" class="callOut callOutRight">
+        <h2>Sign up!</h2>
+      <p>Join our Explorers Program and get access to our monthly newsletter, members-only rates, and blog about your experience!
+<a href="explorers.htm" title="Join our community" class="accent">Join here</a></p>
+      </div>
+    </div>
+      </section>
+    </aside>
+  </section>
+  <footer id="pageFooter">
+  <form action="http://desolve.org" method="post" class="search-form">
+    <label for="search">Looking for something?</label>
+    <input type="search" placeholder="Search" title="Search" class="q" name="search" id="search">
+    <input type="submit" class="submit" value="Go" name="submit">
+  </form>
+  <p><a href="http://www.twitter.com/miss_wafula">twitter</a></p>
+  <p class="notice">&copy; 2014 Blackberry Coursework 3</p>
+</footer>
+</body>
+</html>
+
+<script type="text/javascript">
+ //slide show
+function simpleMessage() {
+  alert("This is just an alert box");
+}
+
+// settimeout is in milliseconds
+//setTimeout(simpleMessage,5000);
+
+var myImage = document.getElementById("mainImage");
+
+var imageArray = ["_images/2.jpg","_images/3.jpg","_images/1.jpg",
+          "_images/previous.jpg","_images/contest.jpg"];
+var imageIndex = 0;
+
+function changeImage() {
+  myImage.setAttribute("src",imageArray[imageIndex]);
+  imageIndex++;
+  if (imageIndex >= imageArray.length) {
+    imageIndex = 0;
+  }
+}
+
+// setInterval is also in milliseconds
+var intervalHandle = setInterval(changeImage,5000);
+
+myImage.onclick =  function() {
+  clearInterval(intervalHandle);
+};
+</script>
+</body>
+</html>
