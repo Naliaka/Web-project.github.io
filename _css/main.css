@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-/*copyright lynda.com 2011
+/*
 feel free to use these styles as you wish
 attribution would be nice, but not required
 */
@@ -83,7 +83,7 @@ address, article, aside, canvas, details, figcaption, figure, footer, header, hg
 
 a {
 	text-decoration: none;
-	color: #667F6A;
+	color: rgb(102, 123, 127);
 	border-bottom: 1px dotted #667F6A;
 }
 
@@ -180,7 +180,7 @@ header h1 {
 /*banner styles*/
 .banner h1 {
 	text-transform: uppercase;
-	
+
 }
 
 /*article styles*/

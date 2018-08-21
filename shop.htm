@@ -29,73 +29,73 @@
 <section id="content" class="cf">
  <article id="gallery">
     <h1 class="galleryTitle">Shop Online </h1>
-    
+
     <p>
     	Choose the phone you'd like to order, your shipping countyr, and preferred shipping method, and we'll give you an estimated total with tax.
 	</p>
-     
+
   <section class="contact">
-    <form class="cart" id="cart-oil"> 
+    <form class="cart" id="cart-oil">
     <div class="item">
-      
+
       <h3>Extra smartphone, instagram</h3>
-      <p>You've never tasted olive oil this delicious.</p>
-      
+      <p>You've never use this phone.</p>
+
       <div class="info">
       <span>Price: $10/phone</span>
       </div>
-      
+
       <div class="order">
-      <label for="txt-q-extra">Quantity desired:</label>
+      <label for="txt-q-extra">Quality desired:</label>
       <input type="text" id="txt-q-extra" size="3" placeholder="0">
       </div>
     </div>
-    
+
     <div class="item">
-        <h3>Cold-Pressed</h3>
-        <p>Ideal for cooking.</p>
-        
+        <h3>Blackberry z2</h3>
+        <p>Ideal internet.</p>
+
         <div class="info">
-        <span>Price: $8/bottle</span>
+        <span>Price: $8/Mobile</span>
         </div>
-        
+
         <div class="order">
-        <label for="txt-q-cold">Quantity desired:</label>
+        <label for="txt-q-cold">Quality desired:</label>
         <input type="text" id="txt-q-cold" size="3" placeholder="0">
         </div>
     </div>
-    
+
     <div class="item">
-        <h3>Garlic-infused</h3>
-        <p>If you love garlic, this is the one for you.</p>
-        
+        <h3>Blackberry z10</h3>
+        <p>If you love social media, this is the one for you.</p>
+
         <div class="info">
-        <span>Price: $10/bottle</span>
+        <span>Price: $10/Mobile</span>
         </div>
-        
+
         <div class="order">
-        <label for="txt-q-garlic">Quantity desired:</label>
+        <label for="txt-q-garlic">Quaity desired:</label>
         <input type="text" id="txt-q-garlic" size="3" placeholder="0">
         </div>
     </div>
-    
+
     <div class="item">
-        <h3>Lemon-infused</h3>
-        <p>Refreshing!<p>
-        
+        <h3>Blackberry z11</h3>
+        <p>Latest!<p>
+
         <div class="info">
-        <span>Price: $12/bottle</span>
+        <span>Price: $12/Mobile</span>
         </div>
-        
+
         <div class="order">
-        <label for="txt-q-lemon">Quantity desired:</label>
+        <label for="txt-q-lemon">Quality desired:</label>
         <input type="text" id="txt-q-lemon" size="3" placeholder="0">
         </div>
     </div>
-    
-    
+
+
     <div id="summary">
-    	<h3>Estimate Order</h3>    	
+    	<h3>Estimate Order</h3>
     	<div class="group state">
 	    	<label for="s-state">State:</label>
 	    	<select id="s-state">
@@ -107,38 +107,38 @@
 		    	<option value="TA">Tanzania</option>
 	    	</select>
     	</div>
-    	
+
     	<div class="group method">
 	    	<label for="r-method-pickup">Shipping Method:</label><br>
 			<input type="radio" value="pickup" name="r_method" id="r-method-pickup" checked> <label for="r-method-pickup">Pickup (free)</label><br>
-			
+l
 			<input type="radio" value="usps" name="r_method" id="r-method-usps"> <label for="r-method-usps">US Mail ($2/phone)</label><br>
-			
+
 			<input type="radio" value="ups" name="r_method" id="r-method-ups"> <label for="r-method-ups">UPS ($3/phone)</label>
     	</div>
-    	
+
     	<div class="group special">
 	    	<label for="c-special-gift">Special:</label><br>
 			<input type="checkbox" value="YES" id="c-special-gift"> <label for="c-special-gift">This is a gift</label><br>
-			
+
 			<input type="checkbox" value="YES" id="c-special-gold"> <label for="c-special-gold">Use gold-flecked phone</label><br>
-			
-			<input type="checkbox" value="YES" id="c-special-cork"> <label for="c-special-cork">Use plastic caps instead of cork</label>
+
+			<input type="checkbox" value="YES" id="c-special-cork"> <label for="c-special-cork">Use plastic  instead</label>
     	</div>
-    	
+
     	<div class="group calc">
     		<p>
     		<label for="btn-estimate">Click to estimate:</label>
     		<input type="submit" value="Estimate Total" id="btn-estimate">
     		<input type="text" id="txt-estimate" placeholder="$0.00">
     		</p>
-    		
+
     		<div id="results"></div>
     	</div>
     </div>
  </section>
     </form>
-   </article> 
+   </article>
   </div>
   <aside>
     <nav id="archives">
@@ -170,7 +170,7 @@
       <div id="trivia" class="callOut">
         <h2>Did You Know?</h2>
         <p>Blackberry produces makes 17 million applications each year!</p>
-      </div> 
+      </div>
 
       <div id="join" class="callOut callOutRight">
         <h2>Sign up!</h2>
@@ -201,37 +201,37 @@ document.getElementById('cart-oil').addEventListener('submit', estimateTotal);
 
 function estimateTotal(event) {
 	event.preventDefault();
-	
+
 	if (document.getElementById('s-state').value === '') {
 		alert('Please choose your shipping state.');
-		
+
 		document.getElementById('s-state').focus();
 	}
-	
-	
-	
+
+
+
 	var btlExtra = parseInt(document.getElementById('txt-q-extra').value, 10) || 0,
-		btlCold = parseInt(document.getElementById('txt-q-cold').value, 10) || 0,
-		btlGarlic = parseInt(document.getElementById('txt-q-garlic').value, 10) || 0,
-		btlLemon = parseInt(document.getElementById('txt-q-lemon').value, 10) || 0,
+		btlCold = parseInt(document.getElementById('txt-q-new').value, 10) || 0,
+		btlGarlic = parseInt(document.getElementById('txt-q-Blackberry z10').value, 10) || 0,
+		btlLemon = parseInt(document.getElementById('txt-q-Blackberry z11').value, 10) || 0,
 		state = document.getElementById('s-state').value;
-		
+
 	var methods = document.getElementById('cart-oil').r_method,
 		shippingMethod;
-	
+
 	for (var i = 0; i < methods.length; i++) {
 		if (methods[i].checked == true) {
 			shippingMethod = methods[i].value;
 		}
 	}
-	
+
 	var taxFactor = 1;
 	if (state === 'CA') {
 		taxFactor = 1.075; // tax is 7.5% in California
 	} else if (state === 'WA') {
 		taxFactor = 1.065; // tax is 6.5% in Washington
 	}
-	
+
 	// pickup, usps, ups
 	var shippingCostPer = 0;
 	switch (shippingMethod) {
@@ -245,16 +245,16 @@ function estimateTotal(event) {
 			shippingCostPer = 3;
 			break;
 	}
-	var totalBottles = btlExtra + btlCold + btlGarlic + btlLemon,
-		shippingCost = totalBottles * shippingCostPer;
-	
-	var subtotal = ((btlExtra * 10) + (btlCold * 8) + (btlGarlic * 10) + (btlLemon * 12)) * taxFactor;
-	
+	var totalBottles = btlExtra + btlnew + btlmobile1 + btlmobile2,
+		shippingCost = totalmobiles * shippingCostPer;
+
+	var subtotal = ((btlExtra * 10) + (btlnew * 8) + (btlBlackberry z11 * 10) + (btlBlackberry z10 * 12)) * taxFactor;
+
 	var estimate = "$" + (subtotal + shippingCost).toFixed(2);
-	
+
 	document.getElementById('txt-estimate').value = estimate;
-	
-	document.getElementById('results').innerHTML = 'Total bottles: ' + totalBottles + '<br>';
+
+	document.getElementById('results').innerHTML = 'Total bottles: ' + totalMobiles + '<br>';
 	document.getElementById('results').innerHTML += 'Total shipping: $' + shippingCost.toFixed(2) + '<br>';
 	document.getElementById('results').innerHTML += 'Tax: ' + ((taxFactor - 1) * 100).toFixed(2) + '% (' + state + ')';
 }
